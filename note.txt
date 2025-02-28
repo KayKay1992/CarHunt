@@ -1,0 +1,10 @@
+install next with this command npx create-next-app@14.2.8 --typescript
+initialize shadcn with this command npx shadcn@2.1.6 init 
+after initialize shadcn then you can add it with this command npx shadcn@2.1.6 add, so you can add any component you will be using in this project.
+to select the component you will be using move the crosor to the componont and press space key to select use dropdown arrow to move to another component and hit enter after selecting all the component.
+
+install some other packages which include npm i react-dropzone@14.3.5 axios@1.7.9
+
+after installing run npm run dev to start your server.
+
+working on the folders and files clearing what we dont need.
