@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar";
 import React from "react";
 
 function WebLayout({
@@ -8,6 +9,7 @@ function WebLayout({
   return (
     <div className="w-full">
       <div className="flex flex-col w-full h-auto">
+        <Navbar/>
         <main>{children}</main>
       </div>
     </div>
