@@ -1,3 +1,5 @@
-Navigation and header section
+HERO SECTION AND HERO FILTER
 
-we created a navbar component in component folder. this is where we coded our navbar component which contains the logo the header titles, the sign in and sign up button and a call to action button sell a car. we created a logo component index.tsx we passed the logo component into the navbar omponent. then we passed the navbar component into the layout file.
+WE CREATED A HERO SECTION FILE COMPONENT AND EXPORTED IT TO THE PAGE.TSX 
+we created a hero-filter component where we coded the filter and search functionality. using the already prepared data which we already we saved in a new created constants folder in car-options.tsx file.
+we created a public folder which houses our image folder in the image folder is where we store our hero-car.png image.
