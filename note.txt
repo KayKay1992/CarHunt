@@ -1,5 +1,21 @@
-HERO SECTION AND HERO FILTER
+Register and login form ui
 
-WE CREATED A HERO SECTION FILE COMPONENT AND EXPORTED IT TO THE PAGE.TSX 
-we created a hero-filter component where we coded the filter and search functionality. using the already prepared data which we already we saved in a new created constants folder in car-options.tsx file.
-we created a public folder which houses our image folder in the image folder is where we store our hero-car.png image.
+first lets install react hook form with this command npm i react-hook-form@7.54.2
+and also insstall resolver with is command npm i @hookform/resolvers@3.10.0.
+run this npx shadcn@2.1.6 add to add form component
+run npm install nugs and add nuqs adapter to layout component.
+to call the api we need to install tanstack query package with this command npm i @tanstack/react-query@5.65.1
+
+
+first we created a sign up and signin schema...we first created a vidation folder and auth.validation.ts file wher we imported object and string from zod and use it to create our schema.
+
+in component folder we created an auth folder which holds our logindialog and registerdialog file, this file is where we write our code for signing in and registering to be able to use the app. we imported here both the sign in and sign up schemas and utilise them using the zodresolver funcion. then we register the registerdialog and logindialog in the layout component.
+
+To make our signup and signin buttons responsive when clicked we created 2 hooks file in our hook folder, use-login-dialog and use-register.dialog.ts hooks.
+we imported useQueryState, parseAsBoolean from nuqs and use it to create the hooks functionality, we exported this usehooks and use them in our logindialog and registerdialog files in auth folder.In the layout we wrap auth components i.e  loginDialog and registerdialogue componets with NuqAdapter which we imported from "nuqs/adapters/next/app",
+we still use the dialogs in Navbar to connect to signup and singin buttons
+
+in preparation For backend data fetching of the user, we created a context folder in the root folder,where we created query-provider.tsx file  this is we code the function for our queryProvider which enables us to query our users and fetching the users. we imported {QueryClient, QueryClientProvider } from "@tanstack/react-query"; after installing tanstack.
+we added a fetcher.tsx file in our lib folder this is where we configure the type of data we are passing or fetching, we created another folder @types where we created a file api.types.ts this where we export the types and what they should contain. we then imported the types into fetcher.tsx, we then wrap all our components in layout with queryProvider. not forgetting to import it.
+
+we then created an api folder in app folder where we created signin and signup folders with their corresponding route files for backend.
